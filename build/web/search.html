@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Back</title>
+    <style>
+        body {
+            font-family: "Segoe UI", sans-serif;
+            background: linear-gradient(135deg, #4a90e2, #007aff);
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .welcome-box {
+            background-color: white;
+            padding: 40px 50px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            width: 400px;
+        }
+
+        h1 {
+            color: #007aff;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #555;
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #007aff;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #005ecc;
+        }
+
+        .logout {
+            margin-top: 20px;
+            display: block;
+            font-size: 14px;
+            color: #777;
+        }
+
+        .logout a {
+            color: #007aff;
+            text-decoration: none;
+        }
+
+        .logout a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="welcome-box">
+        <h1>WELCOME BACK</h1>
+        <p>Chúc bạn có một ngày làm việc hiệu quả 💪</p>
+
+        <a href="MainController?action=viewProfile" class="btn">Go to Dashboard</a>
+
+        <div class="logout">
+            Not you? <a href="login.html">Logout</a>
+        </div>
+    </div>
+</body>
+</html>
